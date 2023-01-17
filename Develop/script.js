@@ -1,3 +1,4 @@
+//Added functions for display current/previous day/time and to save to local storage//
 $('.container').on('click', '.save', function(){
   var parentId = $(this).parent().attr('data-id');
   var appt = $(this).prev().val();
@@ -9,6 +10,7 @@ $('.appt').each(function(){
   var appt = localStorage.getItem(parentId);
   $(this).val(appt);})
 
+  //Added function for previous, current, and future days and times//
 var date = moment().format('dddd MMM Do YYYY');
     $('#currentDay').text(date);
 
