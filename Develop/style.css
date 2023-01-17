@@ -1,6 +1,11 @@
+*
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 textarea {
@@ -23,28 +28,29 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid white;
-  height: 70px;
+  border: 2px solid rgb(54, 48, 48);
+  height: 90px;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: #c27979;
+  color: #8f4d4d;
+  border-top: 1px dashed #8a2e2e;
+  cursor: pointer;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #ecb0b0;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #0f12eb;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #148614;
   color: white;
 }
 
