@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <div data-id="9am" class="row">
+        <div class="col-1 text-center pt-4">9am</div>
+        <textarea data-hour="09" class="col-10 appt"></textarea>
+        <button class="col-1 save"><i class="fas fa-save"></i></button>
+      </div>
+      <div data-id="10am" class="row">
+        <div class="col-1 text-center pt-4">10am</div>
+        <textarea data-hour="10" class="col-10 appt"></textarea>
+        <button class="col-1 save"><i class="fas fa-save"></i></button>
+      </div>
+      <div data-id="11am" class="row">
+        <div class="col-1 text-center pt-4">11am</div>
+        <textarea data-hour="11" class="col-10 appt"></textarea>
+        <button class="col-1 save"><i class="fas fa-save"></i></button>
+      </div>
+      <div data-id="12pm" class="row">
+        <div class="col-1 text-center pt-4">12pm</div>
+        <textarea data-hour="12" class="col-10 appt"></textarea>
+        <button class="col-1 save"><i class="fas fa-save"></i></button>
+      </div>
+      <div data-id="1pm" class="row">
+        <div class="col-1 text-center pt-4">1pm</div>
+        <textarea data-hour="13" class="col-10 appt"></textarea>
+        <button class="col-1 save"><i class="fas fa-save"></i></button>
+      </div>
+      <div data-id="2pm" class="row">
+        <div class="col-1 text-center pt-4">2pm</div>
+        <textarea data-hour="14" class="col-10 appt"></textarea>
+        <button class="col-1 save"><i class="fas fa-save"></i></button>
+      </div>
+      <div data-id="3pm" class="row">
+        <div class="col-1 text-center pt-4">3pm</div>
+        <textarea data-hour="15" class="col-10 appt"></textarea>
+        <button class="col-1 save"><i class="fas fa-save"></i></button>
+      </div>
+      <div data-id="4pm" class="row">
+        <div class="col-1 text-center pt-4">4pm</div>
+        <textarea data-hour="16" class="col-10 appt"></textarea>
+        <button class="col-1 save"><i class="fas fa-save"></i></button>
+      </div>
+      <div data-id="5pm" class="row">
+        <div class="col-1 text-center pt-4">5pm</div>
+        <textarea data-hour="17" class="col-10 appt"></textarea>
+        <button class="col-1 save"><i class="fas fa-save"></i></button>
+      </div>
+      
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+    <script>
+      var currDate = $("#currentDay");
+      currDate.text(new Date());
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
