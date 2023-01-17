@@ -25,7 +25,8 @@
   </head>
 
   <body>
-      <h1 class="display-3">Work Day Scheduler</h1>
+    <!--Created classes for work schedule to display the current date/time and to properly display time blocks-->
+    <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
@@ -45,48 +46,3 @@
         <textarea data-hour="11" class="col-10 appt"></textarea>
         <button class="col-1 save"><i class="fas fa-save"></i></button>
       </div>
-      <div data-id="12pm" class="row">
-        <div class="col-1 text-center pt-4">12pm</div>
-        <textarea data-hour="12" class="col-10 appt"></textarea>
-        <button class="col-1 save"><i class="fas fa-save"></i></button>
-      </div>
-      <div data-id="1pm" class="row">
-        <div class="col-1 text-center pt-4">1pm</div>
-        <textarea data-hour="13" class="col-10 appt"></textarea>
-        <button class="col-1 save"><i class="fas fa-save"></i></button>
-      </div>
-      <div data-id="2pm" class="row">
-        <div class="col-1 text-center pt-4">2pm</div>
-        <textarea data-hour="14" class="col-10 appt"></textarea>
-        <button class="col-1 save"><i class="fas fa-save"></i></button>
-      </div>
-      <div data-id="3pm" class="row">
-        <div class="col-1 text-center pt-4">3pm</div>
-        <textarea data-hour="15" class="col-10 appt"></textarea>
-        <button class="col-1 save"><i class="fas fa-save"></i></button>
-      </div>
-      <div data-id="4pm" class="row">
-        <div class="col-1 text-center pt-4">4pm</div>
-        <textarea data-hour="16" class="col-10 appt"></textarea>
-        <button class="col-1 save"><i class="fas fa-save"></i></button>
-      </div>
-      <div data-id="5pm" class="row">
-        <div class="col-1 text-center pt-4">5pm</div>
-        <textarea data-hour="17" class="col-10 appt"></textarea>
-        <button class="col-1 save"><i class="fas fa-save"></i></button>
-      </div>
-      
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-    crossorigin="anonymous"></script>
-    <script>
-      var currDate = $("#currentDay");
-      currDate.text(new Date());
-    </script>
-
-    <script src="script.js"></script>
-  </body>
-</html>
