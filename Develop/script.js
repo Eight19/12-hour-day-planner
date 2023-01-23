@@ -1,8 +1,8 @@
 var saveButton = $(".saveBtn");
-var textboxEl = $(".description");
+var textboxEl = $("#.description");
 var today = $("#currentDay");
-var timeBlock = $(".time-block");
-var currentDate = dayjs().format("dddd, MMMM D, YYYY")
+var timeBlock = $("#.time-block");
+var currentDate = dayjs().format("#dddd, MMMM D, YYYY")
 var currentHour = dayjs().hour();
 
 $(function () 
