@@ -1,22 +1,22 @@
-var saveButton = $(".saveBtn");
-var textboxEl = $("#.description");
-var today = $("#currentDay");
-var timeBlock = $("#.time-block");
-var currentDate = dayjs().format("#dddd, MMMM D, YYYY")
-var currentHour = dayjs().hour();
+const saveButton =document.querySelector("#.saveBtn");
+const textboxEl = document.querySelector("#.description");
+const today = document.querySelector("#currentDay");
+const timeBlock = $(".time-block");
+const currentDate = dayjs().format("dddd, MMMM D, YYYY")
+const currentHour = dayjs().hour();
 
-$(function () 
-
-{ saveButton.on("click", function(event) {
-    var timeStamp = $(event.target).parent().attr("id");
-    var message = $(event.target).parent().children().eq(1).val();
+$(".saveBtn").on("click", function() {
+    const timeStamp = $(this).parent(".description").attr("id");
+    const message = $(this).parent().children().eq(1).val();
+    
     localStorage.setItem(timeStamp, message);
   }
   );
 
   
+  
   timeBlock.each(function() 
-  { var calendarHour = parseInt($(this).attr("id"));
+  { const calendarHour = parseInt($(this).attr("id"));
     
   $(this).children().eq(1).val(localStorage.getItem(calendarHour));
     
@@ -31,5 +31,3 @@ $(function ()
   )
   
     today.text(currentDate);
-}
-);
