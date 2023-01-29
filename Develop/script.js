@@ -40,5 +40,4 @@ $(function () {
   $("#clearSectionBtn").click(function (event) {
     event.preventDefault;
   $("textarea").val(""); localStorage.clear();
-  console.log(clearSection);
   });
